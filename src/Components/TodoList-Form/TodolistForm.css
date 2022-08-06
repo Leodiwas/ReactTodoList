@@ -1,0 +1,45 @@
+.todo__form-Box {
+  margin-bottom: 2rem;
+}
+
+.todo__form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 2rem;
+}
+
+.todo__form-controls {
+  display: flex;
+  gap: 2rem;
+  overflow: hidden;
+}
+
+label {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: var(--color-white);
+}
+
+.todo__form-button {
+  margin-left: auto;
+}
+
+.button {
+  display: inline-block;
+  cursor: pointer;
+  padding: 1rem 2rem;
+  border-radius: 0.8rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: var(--color-white);
+  background-image: var(--gradient-primary);
+}
+
+/* ================== Media Queries ============= */
+@media screen and (max-width: 480px) {
+  .todo__form-controls {
+    flex-direction: column;
+  }
+}

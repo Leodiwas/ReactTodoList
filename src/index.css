@@ -1,13 +1,93 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+
+:root {
+  --font-primary: "Roboto", sans-serif;
+
+  --color-white: #ffffff;
+  --color-black: #000;
+  --color-red: #fd424b;
+  --color-gray: #e5e5e5;
+  --color-dark-gray: #848484;
+
+  --background-black: #131417;
+  --background-black2: hsl(228, 7%, 14%);
+
+  --gradient-primary: linear-gradient(to top left, #39b385, #9be15d);
+  --gradient-secondary: linear-gradient(to top left, #ffb003, #ffcb03);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@charset "UTF-8";
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  font-family: var(--font-primary);
+}
+
+a {
+  text-decoration: none;
+  color: initial;
+  transition: all 0.5s ease;
+}
+
+li {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* ============= Scrool Bar ============ */
+
+::-webkit-scrollbar {
+  width: 0.4rem;
+}
+
+::-webkit-scrollbar-track {
+  width: 2rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-dark-gray);
+  border-radius: 2rem;
+  height: 2rem;
+}
+
+/* =========== Todo List Container ============= */
+
+.todo__container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 1rem;
+  height: 100vh;
+  width: 100vw;
+  padding: 2rem;
+  background-color: var(--background-black2);
+}
+
+.todo__container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.5);
 }

@@ -1,0 +1,10 @@
+.todoTitle {
+  text-align: center;
+  padding: 2rem;
+}
+
+.todoTitle > h1 {
+  font-size: 2.6rem;
+  font-weight: 500;
+  color: var(--color-white);
+}

@@ -1,0 +1,24 @@
+.todo__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  gap: 0.4rem;
+  padding: 0.6rem 1rem;
+  border-radius: 0.6rem;
+  border-left: 0.4rem solid #9be15d;
+  border-right: 0.4rem solid #9be15d;
+  color: var(--color-white);
+  box-shadow: rgba(0, 0, 0, 0.35) 0 0.5rem 1.5rem;
+  background: var(--background-black2);
+}
+
+.todo-time {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.todo__item > h4 {
+  font-size: 2.4rem;
+  font-weight: 500;
+}

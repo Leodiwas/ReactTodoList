@@ -1,0 +1,19 @@
+.todo__items {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  padding: 1.2rem 1rem;
+}
+
+.todoTask__falldown {
+  position: relative;
+  z-index: 5;
+  font-size: 2rem;
+  font-weight: 500;
+  padding: 1rem 2rem;
+  border-radius: 0.8rem;
+  border-left: 0.4rem solid #9be15d;
+  border-right: 0.4rem solid #9be15d;
+  color: var(--color-white);
+  background-color: var(--background-black2);
+}
